@@ -1,0 +1,20 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/create-checkout"
+  to = "/.netlify/functions/create-checkout"
+  status = 200
+[[redirects]]
+  from = "/api/check-receipt"
+  to = "/.netlify/functions/check-receipt"
+  status = 200
+[[redirects]]
+  from = "/api/stripe-webhook"
+  to = "/.netlify/functions/stripe-webhook"
+  status = 200
+[[redirects]]
+  from = "/success"
+  to = "/success.html"
+  status = 200
